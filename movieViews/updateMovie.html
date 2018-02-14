@@ -1,0 +1,46 @@
+<form>
+  <div style='margin-bottom: 5px'>
+    <h5>Update Movie Form</h5>
+  </div>
+  <div class='form-group'>
+    <label for='movie_id'>Movies by ID</label>
+    <input class="form-control" id="moveID-update" placeholder='Movie ID'>
+    <button class='btn btn-primary' type="submit" style='margin-top: 5px' id='find-by-id'>Find</button>
+  </div>
+  <div class='form-group'>
+    <label for='movie_title'>Movies by Title</label>
+    <input class="form-control" id="moveTitle-update" placeholder='Movie Title'>
+    <button class='btn btn-primary' type="submit" style='margin-top: 5px' id='find-by-title'>Find</button>
+  </div>
+  <div class='form-group'>
+    <label for='movie_genres'>Movie Genres to Find</label>
+    <input class="form-control" id="moveGenres-update" placeholder='Movie Genres'>
+    <button class='btn btn-primary' type="submit" style='margin-top: 5px' id='find-by-genre'>Find</button>
+  </div>
+</form>
+<div class='container-fluid invisible'>
+  <label for='search-result'> Search Result:</label>
+  <div class='well' id='search-result-update' style='overflow-y: auto;margin-top: 10px;margin-bottom: 10px'></div>
+</div>
+<div id='movie-update-submission' class="invisible">
+  <label for='selection'>Enter Movie ID</label>
+  <input id='movie-id-selection' placehold='Movie ID'>
+  <button class='btn btn-secondary' type='submit' id='movie-selection' style='margin-top: 10px; margin-bottom: 10px'>Submit</button>
+</div>
+<div id='movie-update-form' class="invisible">
+  <form>
+    <div class='form-group'>
+      <label for='movie_id'>Movie ID</label>
+      <input class="form-control" id="moveID-found-update" placeholder='Movie ID'>
+    </div>
+    <div class='form-group'>
+      <label for='movie_title'>Movie Title</label>
+      <input class="form-control" id="moveTitle-found-update" placeholder='Movie Title'>
+    </div>
+    <div class='form-group'>
+      <label for='movie_genres'>Movie Genres</label>
+      <input class="form-control" id="moveGenres-found-update" placeholder='Movie Genres'>
+    </div>
+    <button class='btn btn-warning' type='button' id='update-selected'>Update the Movie</button>
+  </form>
+</div>
